@@ -47,6 +47,28 @@ h4 {
   text-transform: uppercase;
   font-size: 12px;
 }
+.input-wrapper .employee-make-per-day span.error {
+  color: red;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.input-wrapper .employee-make-per-day input.error {
+  border-color: red;
+  background-color: rgba(238, 181, 181, 0.595);
+}
+.input-wrapper .day-reservations span.error {
+  color: red;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.input-wrapper .day-reservations input.error {
+  border-color: red;
+  background-color: rgba(238, 181, 181, 0.595);
+}
+.input-wrapper .day-reservations span.error:not(.show) {
+  display: none;
+}
+
 .info-wrapper .input-wrapper span.error:not(.show) {
   display: none;
 }

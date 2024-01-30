@@ -44,6 +44,32 @@ document
       event.target.nextElementSibling.classList.remove('show');
     }
   });
+document
+  .getElementById('employee-make-per-day')
+  .addEventListener('keyup', function (event) {
+    // console.log('reiksme pasikeite');
+    let inputValue = event.target.valueAsNumber;
+    if (inputValue < 0) {
+      event.target.classList.add('error');
+      event.target.nextElementSibling.classList.add('show');
+    } else {
+      event.target.classList.remove('error');
+      event.target.nextElementSibling.classList.remove('show');
+    }
+  });
+document
+  .getElementById('day-reservations')
+  .addEventListener('keyup', function (event) {
+    // console.log('reiksme pasikeite');
+    let inputValue = event.target.valueAsNumber;
+    if (inputValue < 5) {
+      event.target.classList.add('error');
+      event.target.nextElementSibling.classList.add('show');
+    } else {
+      event.target.classList.remove('error');
+      event.target.nextElementSibling.classList.remove('show');
+    }
+  });
 document.getElementById('reset').addEventListener('click', function () {
   //   console.log('cliket');
   document.getElementById('employees-count').value = 0;
